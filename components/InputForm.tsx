@@ -20,7 +20,7 @@ export const InputForm = ({
   };
 
   return (
-    <div className="p-4 bg-background/80 backdrop-blur-xl border-t border-border">
+    <div className="p-4 bg-background/80 backdrop-blur-xl border-t border-border" >
       <div className="max-w-4xl mx-auto">
         <div className="relative">
           <input

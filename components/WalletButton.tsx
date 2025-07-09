@@ -1,9 +1,10 @@
 // WalletButton.tsx
-'use client';
+"use client";
 
-import { Wallet } from 'lucide-react';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { Button } from '@/components/ui/button';
+import { Wallet } from "lucide-react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export const WalletButton = () => {
   return (
@@ -17,26 +18,30 @@ export const WalletButton = () => {
         mounted,
         authenticationStatus,
       }) => {
-        const ready = mounted && authenticationStatus !== 'loading';
+        const ready = mounted && authenticationStatus !== "loading";
         const connected =
           ready &&
           account &&
           chain &&
-          (!authenticationStatus || authenticationStatus === 'authenticated');
+          (!authenticationStatus || authenticationStatus === "authenticated");
 
         return (
           <div
             {...(!ready && {
-              'aria-hidden': true,
+              "aria-hidden": true,
               style: {
                 opacity: 0,
-                pointerEvents: 'none',
-                userSelect: 'none',
+                pointerEvents: "none",
+                userSelect: "none",
               },
             })}
           >
             {!connected ? (
-              <Button onClick={openConnectModal} variant="outline" className="gap-2">
+              <Button
+                onClick={openConnectModal}
+                variant="outline"
+                className="gap-2"
+              >
                 <Wallet className="w-4 h-4" />
                 Connect Wallet
               </Button>
@@ -46,12 +51,18 @@ export const WalletButton = () => {
               </Button>
             ) : (
               <div className="flex items-center gap-2">
-                <Button onClick={openChainModal} variant="ghost" className="gap-2">
+                <Button
+                  onClick={openChainModal}
+                  variant="ghost"
+                  className="gap-2"
+                >
                   {chain.hasIcon && chain.iconUrl && (
-                    <img
+                    <Image
                       src={chain.iconUrl}
-                      alt={chain.name ?? 'Chain icon'}
-                      className="w-4 h-4 rounded-full"
+                      alt={chain.name ?? "Chain icon"}
+                      width={16}
+                      height={16}
+                      className="rounded-full"
                     />
                   )}
                   {chain.name}

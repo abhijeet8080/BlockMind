@@ -40,7 +40,7 @@ export const ChatInterface = () => {
   });
 
   return (
-    <div className="flex flex-col h-screen bg-gradient-to-br from-background via-muted/10 to-background">
+    <div className="flex flex-col h-screen bg-gradient-to-br from-background via-muted/10 to-background" suppressHydrationWarning>
         <div className="flex-1 overflow-y-auto pt-20 md:pt-24 px-4 pb-4 space-y-6">
 
 

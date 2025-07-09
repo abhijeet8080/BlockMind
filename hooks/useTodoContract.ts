@@ -8,20 +8,19 @@ export const useCreateTask = () => {
   const create = async ({
     title,
     description,
-    timestamp,
+   
     isDone,
   }: {
     title: string;
     description: string;
-    timestamp: number;
     isDone: boolean;
   }) => {
-    console.log("📦 createTask called:", { title, description, timestamp, isDone });
+    console.log("📦 createTask called:", { title, description, isDone });
     return await writeContractAsync({
       abi,
       address: CONTRACT_ADDRESS,
       functionName: 'createTask',
-      args: [title, description, timestamp, isDone],
+      args: [title, description, isDone],
     });
   };
 
@@ -35,21 +34,20 @@ export const useUpdateTask = () => {
     id,
     title,
     description,
-    timestamp,
+    
     isDone,
   }: {
     id: number;
     title: string;
     description: string;
-    timestamp: number;
     isDone: boolean;
   }) => {
-    console.log("✏️ updateTask called:", { id, title, description, timestamp, isDone });
+    console.log("✏️ updateTask called:", { id, title, description, isDone });
     return await writeContractAsync({
       abi,
       address: CONTRACT_ADDRESS,
       functionName: 'updateTask',
-      args: [id, title, description, timestamp, isDone],
+      args: [id, title, description, isDone],
     });
   };
 
