@@ -37,24 +37,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Abhijeet Kadam", url: "https://abhijeet-kadam.vercel.app" }],
   creator: "Abhijeet Kadam",
-  openGraph: {
-    title: "BlockMind | AI-Powered Web3 Task Manager",
-    description:
-      "Control your tasks on-chain with AI and natural language. Built with Next.js, Wagmi, Viem, and OpenAI.",
-    siteName: "BlockMind",
-    images: [
-      {
-        url: '/icons/logo.png',
-        width: 1200,
-        height: 630,
-        alt: "BlockMind App Preview",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
   
-  themeColor: "#FF5733",
+  
 };
 
 

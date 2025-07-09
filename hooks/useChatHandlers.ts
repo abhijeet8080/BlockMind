@@ -97,7 +97,7 @@ export const useChatHandlers = ({
     setIsTyping(true);
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_CONTRACT_ADDRESS}/api/ai/chat`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/ai/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

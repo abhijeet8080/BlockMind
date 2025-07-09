@@ -47,8 +47,8 @@ export default function ContactPage() {
     setSubmitSuccess(false);
 
     try {
-      const { data } = await axios.post(`${process.env.NEXT_PUBLIC_SITE_URL}/api/ai/contact`, formState);
-      // const { data } = await axios.post(`/api/ai/contact`, formState);
+      // const { data } = await axios.post(`${process.env.NEXT_PUBLIC_SITE_URL}/api/ai/contact`, formState);
+      const { data } = await axios.post(`/api/ai/contact`, formState);
       if (data.success) {
         setSubmitSuccess(true);
         setFormState({ name: "", email: "", message: "" });
