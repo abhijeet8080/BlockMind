@@ -3,8 +3,11 @@ import OpenAI from "openai";
 import ChatHistory from "@/models/ChatHistory";
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-
-export async function processObservation(observation: any, user: { walletAddress: string }) {
+type Observation = {
+  action: string;
+  details?: string;
+};
+export async function processObservation(observation:Observation, user: { walletAddress: string }) {
   const walletAddress = user.walletAddress;
   const chatHistory = await ChatHistory.findOne({ walletAddress });
 
