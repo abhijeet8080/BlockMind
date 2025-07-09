@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BlockMind | AI-Powered Web3 Task Manager
+
+BlockMind is your intelligent, AI-powered assistant for managing tasks on the blockchain. Seamlessly create, update, and automate Web3 tasks with voice and natural language input.
+
+## Features
+
+- AI-powered task management
+- Blockchain automation with smart contracts
+- Voice and natural language input
+- Modern UI built with Next.js, Geist UI, and Tailwind CSS
+- Web3 integration using Wagmi and Viem
+- OpenAI integration for intelligent task handling
+
+## Tech Stack
+
+- **Next.js** (App Router)
+- **TypeScript**
+- **Wagmi** & **Viem** (Web3)
+- **OpenAI API**
+- **Geist** & **Geist Mono** fonts
+- **Tailwind CSS**
+- **React Context Providers**
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+- Node.js (v18+ recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/blockmind.git
+    cd blockmind
+    ```
+
+2. Install dependencies:
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
+
+3. Create a `.env.local` file and add your environment variables (API keys, etc).
+
+### Running the Development Server
+
+```sh
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `app/` – Next.js app directory (pages, layouts, providers)
+- `components/` – Reusable UI components
+- `constants/` – App-wide constants
+- `contract/` – Smart contract ABIs and interaction logic
+- `hooks/` – Custom React hooks
+- `lib/` – Utility libraries
+- `models/` – TypeScript models and types
+- `public/` – Static assets (icons, images)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Metadata
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Author:** [Abhijeet Kadam](https://abhijeet-kadam.vercel.app)
+- **Keywords:** BlockMind, AI Task Manager, Web3 Productivity, Blockchain Automation, Smart Contract Tasks, Wagmi, Viem, Next.js, OpenAI, Voice Assistant Web3
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+BlockMind – Control your tasks on-chain with AI and natural
