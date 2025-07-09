@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { Brain, Code2, Rocket, User } from "lucide-react";
 import Link from "next/link";
@@ -40,14 +40,24 @@ export default function AboutPage() {
         <motion.div variants={fadeInUp} className="flex items-start gap-4">
           <User className="w-6 h-6 text-primary mt-1" />
           <p>
-            I&apos;m <strong>Abhijeet Kadam</strong>, a passionate software developer with a B.Tech degree and a strong foundation in <strong>Data Structures & Algorithms</strong>. I specialize in building modern, performant, and secure web applications across the full stack.
+            I&apos;m <strong>Abhijeet Kadam</strong>, a passionate software
+            developer with a B.Tech degree and a strong foundation in{" "}
+            <strong>Data Structures & Algorithms</strong>. I specialize in
+            building modern, performant, and secure web applications across the
+            full stack.
           </p>
         </motion.div>
 
         <motion.div variants={fadeInUp} className="flex items-start gap-4">
           <Code2 className="w-6 h-6 text-primary mt-1" />
           <p>
-            My core stack includes <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, <strong>Node.js</strong>, <strong>MongoDB</strong>, and <strong>Express</strong>. I also leverage tools like <strong>shadcn/ui</strong>, <strong>Wagmi</strong>, <strong>Viem</strong>, <strong>Hardhat</strong>, and <strong>RainbowKit</strong> to build Web3-integrated AI solutions.
+            My core stack includes <strong>Next.js</strong>,{" "}
+            <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>,{" "}
+            <strong>Node.js</strong>, <strong>MongoDB</strong>, and{" "}
+            <strong>Express</strong>. I also leverage tools like{" "}
+            <strong>shadcn/ui</strong>, <strong>Wagmi</strong>,{" "}
+            <strong>Viem</strong>, <strong>Hardhat</strong>, and{" "}
+            <strong>RainbowKit</strong> to build Web3-integrated AI solutions.
           </p>
         </motion.div>
 
@@ -56,9 +66,18 @@ export default function AboutPage() {
           <div>
             <p className="mb-2">Some of my recent work includes:</p>
             <ul className="list-disc list-inside space-y-1">
-              <li><strong>AI Task Manager</strong> – A Web3-enabled, AI-powered productivity tool.</li>
-              <li><strong>ConvoCloud</strong> – A full-stack video conferencing and collaboration app.</li>
-              <li><strong>Jarvis-like AI Assistant</strong> – A voice-controlled desktop automation assistant.</li>
+              <li>
+                <strong>AI Task Manager</strong> – A Web3-enabled, AI-powered
+                productivity tool.
+              </li>
+              <li>
+                <strong>ConvoCloud</strong> – A full-stack video conferencing
+                and collaboration app.
+              </li>
+              <li>
+                <strong>MCP Server</strong> – An AI-powered system for
+                automating and managing LinkedIn posts.
+              </li>
             </ul>
           </div>
         </motion.div>
@@ -66,7 +85,16 @@ export default function AboutPage() {
         <motion.div variants={fadeInUp} className="flex items-start gap-4">
           <Brain className="w-6 h-6 text-primary mt-1" />
           <p>
-            I&apos;m continuously exploring <strong>Generative AI</strong>, <strong>Blockchain Architecture</strong>, and <strong>Automotive Cybersecurity</strong>. I aim to master advanced concepts such as <strong>SHA-256</strong>, <strong>ECDSA</strong>, <strong>PoW</strong>/<strong>PoS</strong>, <strong>Finality & Forks</strong>, and <strong>LLM-based RAG applications</strong>.
+            I&apos;m actively building at the intersection of{" "}
+            <strong>Web3</strong>, <strong>LLMs</strong>, and{" "}
+            <strong>Human-AI interfaces</strong>. With hands-on experience in{" "}
+            <strong>Solidity</strong>, <strong>Wagmi</strong>,{" "}
+            <strong>Viem</strong>, and <strong>OpenAI</strong> APIs, I'm
+            exploring how smart contracts and intelligent agents can power
+            autonomous, privacy-focused applications. My current focus is
+            integrating <strong>LLM-driven workflows</strong> with on-chain
+            logic using tools like <strong>Next.js</strong>,{" "}
+            <strong>TypeScript</strong>, and <strong>Framer Motion</strong>.
           </p>
         </motion.div>
 

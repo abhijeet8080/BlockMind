@@ -176,11 +176,11 @@ export default function ContactPage() {
           </div>
           <div className="flex items-center space-x-2">
             <Mail className="w-4 h-4" />
-            <span>kadamabhijeet021@gmail.com</span>
+            <a href="mailto:kadamabhijeet021@gmail.com" >kadamabhijeet021@gmail.com</a>
           </div>
           <div className="flex items-center space-x-2">
             <PhoneCall className="w-4 h-4" />
-            <span>+91-8080053515</span>
+            <span>+918080053515</span>
           </div>
         </motion.div>
       </motion.div>
