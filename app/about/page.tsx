@@ -89,7 +89,7 @@ export default function AboutPage() {
             <strong>Web3</strong>, <strong>LLMs</strong>, and{" "}
             <strong>Human-AI interfaces</strong>. With hands-on experience in{" "}
             <strong>Solidity</strong>, <strong>Wagmi</strong>,{" "}
-            <strong>Viem</strong>, and <strong>OpenAI</strong> APIs, I'm
+            <strong>Viem</strong>, and <strong>OpenAI</strong> APIs, I&apos;m
             exploring how smart contracts and intelligent agents can power
             autonomous, privacy-focused applications. My current focus is
             integrating <strong>LLM-driven workflows</strong> with on-chain
