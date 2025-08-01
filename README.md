@@ -32,7 +32,7 @@ BlockMind is your intelligent, AI-powered assistant for managing tasks on the bl
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/blockmind.git
+    git clone https://github.com/abhijeet8080/blockmind.git
     cd blockmind
     ```
 
